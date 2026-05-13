@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="720" height="220" font-family="'Cascadia Code', 'Consolas', monospace" font-size="13">
+  <defs>
+    <clipPath id="rounded-bone">
+      <rect x="0" y="0" width="720" height="220" rx="14" ry="14"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#rounded-bone)">
+    <rect x="0" y="0" width="720" height="220" fill="#1c1a24"/>
+    <g transform="translate(24, 32)">
+      <text fill="#fbf6ed">
+        <tspan x="0" dy="0"><tspan fill="#8b5cf6">┌──(</tspan><tspan fill="#a78bfa" font-weight="600">kali㉿kali</tspan><tspan fill="#8b5cf6">)-[</tspan><tspan fill="#fbf6ed">~/projects</tspan><tspan fill="#8b5cf6">]</tspan></tspan>
+        <tspan x="0" dy="20"><tspan fill="#8b5cf6">└─$</tspan> <tspan fill="#a78bfa" font-weight="600">ls</tspan> -la</tspan>
+        <tspan x="0" dy="24"><tspan fill="#5b6ba8">documents</tspan>  readme.md  <tspan fill="#3ddc84">deploy.sh</tspan>  <tspan fill="#b894b8">config.json</tspan></tspan>
+        <tspan x="0" dy="28"><tspan fill="#8b5cf6">└─$</tspan> <tspan fill="#a78bfa" font-weight="600">npm</tspan> run build</tspan>
+        <tspan x="0" dy="20"><tspan fill="#c4a78a">warning:</tspan> deprecated package detected</tspan>
+        <tspan x="0" dy="20"><tspan fill="#3ddc84">✓ build successful</tspan> — 2.3s</tspan>
+        <tspan x="0" dy="24"><tspan fill="#e63946">error:</tspan> command not found</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

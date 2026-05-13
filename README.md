@@ -12,35 +12,34 @@ Includes installer for:
 
 ## Variants
 
-Five flavours share the same palette but vary in **foreground tone**, so you can match the theme to your mood and lighting:
+Five flavours share the same palette but vary in **foreground tone**, so you can match the theme to your mood and lighting.
 
-| Variant | Foreground | Character |
-|---|---|---|
-| ⭐ **ExclusiveBone** | bone white `#fbf6ed` | luminous, refined, maximum legibility (recommended) |
-| **ExclusiveAsh** | light ash grey `#d8d2cc` | balanced, sober |
-| **ExclusiveTea** | mid ash grey `#bdb5ac` | calm, mineral, low-key |
-| **ExclusiveSand** | deep sandy beige `#d4c5a9` | warm, earthy, evening-room |
-| **ExclusiveMidnight** | warm cream `#e8e0d0` | vintage golden hour |
+### ExclusiveBone — bone-white text, luminous and refined (recommended)
+
+![ExclusiveBone preview](assets/preview-bone.svg)
+
+### ExclusiveAsh — light ash grey, balanced and sober
+
+![ExclusiveAsh preview](assets/preview-ash.svg)
+
+### ExclusiveTea — mid ash grey, calm and mineral
+
+![ExclusiveTea preview](assets/preview-tea.svg)
+
+### ExclusiveSand — deep sandy beige, warm and earthy
+
+![ExclusiveSand preview](assets/preview-sand.svg)
+
+### ExclusiveMidnight — warm cream, vintage golden hour
+
+![ExclusiveMidnight preview](assets/preview-midnight.svg)
 
 All variants share the same purple, ruby, emerald, cerulean and mauve accents.
-
-## Preview
-
-```
-┌──(kali㉿kali)-[~]
-└─$ ls -la                          ← prompt in intense purple
-documents  readme.md  deploy.sh    ← directory in muted blue-violet
-└─$ sudo apt update                 ← `sudo` in coral, commands in purple
-✓ build successful — 2.3s           ← success in emerald green
-warning: deprecated package         ← warning in soft beige
-error: command not found            ← error in ruby red
-# comments and code annotations     ← in pastel cerulean
-```
 
 ## Quick install
 
 ```bash
-git clone https://github.com/<your-user>/exclusive-theme.git
+git clone https://github.com/nebzn/exclusive-theme.git
 cd exclusive-theme
 ./exclusive install
 ```
@@ -60,7 +59,7 @@ The installer will:
 ./exclusive                              # interactive menu
 ./exclusive install                      # interactive variant chooser
 ./exclusive install ExclusiveBone        # install one specific variant
-./exclusive install ExclusiveSand        # any variant name works
+./exclusive install ExclusiveSand        # ...any variant name works
 ./exclusive install-all                  # install every variant at once
 ./exclusive uninstall                    # remove every Exclusive theme
 ./exclusive --help
@@ -113,3 +112,7 @@ Removes every `Exclusive*.colorscheme` from the qterminal system and user direct
 ## License
 
 MIT — do what you want.
+
+---
+
+<sub>Powered by AI — Anthropic Claude Opus 4.7</sub>
