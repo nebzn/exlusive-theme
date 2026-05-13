@@ -1,0 +1,16 @@
+[/]
+visible-name='ExclusiveAsh'
+use-theme-colors=false
+use-theme-background=false
+use-theme-transparency=false
+background-color='rgb(28,26,36)'
+foreground-color='rgb(216,210,204)'
+bold-color='rgb(216,210,204)'
+bold-color-same-as-fg=true
+cursor-background-color='rgb(109,40,217)'
+cursor-foreground-color='rgb(216,210,204)'
+cursor-colors-set=true
+highlight-background-color='rgb(109,40,217)'
+highlight-foreground-color='rgb(216,210,204)'
+highlight-colors-set=true
+palette=['rgb(42,37,51)', 'rgb(230,57,70)', 'rgb(139,92,246)', 'rgb(196,167,138)', 'rgb(91,107,168)', 'rgb(61,220,132)', 'rgb(184,148,184)', 'rgb(216,210,204)', 'rgb(126,177,214)', 'rgb(255,90,110)', 'rgb(167,139,250)', 'rgb(212,186,160)', 'rgb(122,138,200)', 'rgb(94,255,159)', 'rgb(200,168,200)', 'rgb(235,229,223)']
