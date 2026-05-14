@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ============================================================
 #  Exclusive Theme installer
-#  https://github.com/<your-user>/exclusive-theme
+#  https://github.com/nebzn/exclusive-theme
 # ============================================================
 #
 # Variants:
@@ -218,7 +218,7 @@ uninstall_all() {
 choose_variant() {
     echo -e "  ${BONE}Choose a variant:${RESET}"
     echo
-    echo -e "  ${PURPLE_BOLD}1)${RESET} ${BONE}ExclusiveBone${RESET}      ${DIM}bone-white text · luminous · recommended ⭐${RESET}"
+    echo -e "  ${PURPLE_BOLD}1)${RESET} ${BONE}ExclusiveBone${RESET}      ${DIM}bone-white text · luminous · recommended${RESET}"
     echo -e "  ${PURPLE_BOLD}2)${RESET} ExclusiveAsh        ${DIM}light ash-grey text · balanced${RESET}"
     echo -e "  ${PURPLE_BOLD}3)${RESET} ExclusiveTea        ${DIM}mid ash-grey text · sober${RESET}"
     echo -e "  ${PURPLE_BOLD}4)${RESET} ExclusiveSand       ${DIM}deep sandy beige · warm${RESET}"
@@ -275,23 +275,25 @@ do_install_selected() {
     final_instructions "${SELECTED_VARIANTS[0]}"
 }
 
+# Plain-text final instructions (no ANSI codes) to ensure consistent output
+# across shells / heredoc quirks. The body is intentionally simple.
 final_instructions() {
     local variant="${1:-ExclusiveBone}"
-    step "Done!"
-    cat <<EOF
-  ${BONE}Next steps:${RESET}
-    ${CERULEAN}1.${RESET} Close qterminal completely and reopen it.
-    ${CERULEAN}2.${RESET} Preferences → Appearance → Color scheme → ${PURPLE_BOLD}${variant}${RESET}
-    ${CERULEAN}3.${RESET} Same panel → Font → Change → ${PURPLE_BOLD}Cascadia Code${RESET} (size 11 or 12).
-    ${CERULEAN}4.${RESET} Click Apply → OK.
-
-  ${DIM}Enjoy your new terminal!${RESET}
-
-EOF
+    echo
+    echo "Done!"
+    echo
+    echo "Next steps:"
+    echo "  1. Close qterminal completely and reopen it."
+    echo "  2. Preferences -> Appearance -> Color scheme -> ${variant}"
+    echo "  3. Same panel -> Font -> Change -> Cascadia Code (size 11 or 12)."
+    echo "  4. Click Apply -> OK."
+    echo
+    echo "Enjoy your new terminal!"
+    echo
 }
 
 usage() {
-    cat <<EOF
+    cat <<'EOF'
 
 Usage: ./install.sh [command] [variant]
 
